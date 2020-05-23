@@ -2,8 +2,8 @@
 $token = $_GET['token'] ?? "";
 $apiUrl = "https://api.vk.com/method/";
 $version = "5.103";
-$clientId = 7479476;
-$client_secret = "k45S19YPkmeIWl4xctPO";
+$clientId = "CLIENT_ID";
+$client_secret = "CLIENT_SECRET";
 $userId = 146381789;
 $userFavoriteActivity = "Программирование";
 
@@ -58,6 +58,6 @@ if ($token != "") {
     }
 }
 ?>
-<a href="https://oauth.vk.com/authorize?client_id=<?=$clientId?>&display=page&redirect_uri=http://pavlovq5.beget.tech/test.php&scope=friends,offline,groups&response_type=code&v=5.103">
+<a href="https://oauth.vk.com/authorize?client_id=<?=$clientId?>&display=page&redirect_uri=http://pavlovq5.beget.tech/test.php&scope=friends,offline,groups&response_type=code&v=<?=$version?>">
     Login VK
 </a>
